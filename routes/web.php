@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\HelloLaravelController;
+Route::get('/HelloLaravel',[HelloLaravelController::class, 'index']);
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/', function () {
     return view('welcome');
