@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HelloLaravelController;
 Route::get('/HelloLaravel',[HelloLaravelController::class, 'index']);
+Route::get('/view', function () {
+    return view('welcome');
+});
+//
 
 /*
 |--------------------------------------------------------------------------
