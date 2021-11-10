@@ -10,6 +10,10 @@ Route::get('/productSingup',[ProductDataController::class, 'signup']);
 Route::get('/productList',[ProductDataController::class, 'list']);
 Route::get('/productEdit',[ProductDataController::class, 'edit']);
 
+use App\Http\Controllers\PurchaseDataController;
+Route::get('/purchaseSingup',[PurchaseDataController::class, 'signup']);
+Route::get('/purchaseList',[PurchaseDataController::class, 'list']);
+Route::get('/purchaseEdit',[PurchaseDataController::class, 'edit']);
 
 Route::get('/view', function () {
     return view('welcome');
